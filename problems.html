@@ -521,10 +521,10 @@ const firebaseConfig = {
                     loadProblems();
                 } else {
                     alert("メール確認が必要です。");
-                    window.location.href = "home.html";
+                    window.location.href = "index.html";
                 }
             } else {
-                window.location.href = "home.html";
+                window.location.href = "index.html";
                 alert("このページはログインが必要です");
             }
         });
@@ -590,7 +590,7 @@ const firebaseConfig = {
             try {
                 await signOut(auth);
                 alert("ログアウト成功！");
-                window.location.href = "home.html";
+                window.location.href = "index.html";
             } catch (error) {
                 alert("ログアウト失敗: " + error.message);
             }
