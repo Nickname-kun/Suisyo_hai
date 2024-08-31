@@ -518,13 +518,13 @@ const firebaseConfig = {
             if (user) {
                 if (!user.emailVerified) {
                     alert("メール確認が必要です。");
-                    window.location.href = "home.html";
+                    window.location.href = "index.html";
                     return;
                 }
                 document.getElementById('user').innerText = `Hi, ${user.displayName}!`;
                 loadUsers();
             } else {
-                window.location.href = "home.html";
+                window.location.href = "index.html";
                 alert("このページはログインが必要です");
             }
         });
@@ -532,7 +532,7 @@ const firebaseConfig = {
             try {
                 await signOut(auth);
                 alert("ログアウト成功！");
-                window.location.href = "home.html";
+                window.location.href = "index.html";
             } catch (error) {
                 alert("ログアウト失敗: " + error.message);
             }
@@ -550,7 +550,7 @@ const firebaseConfig = {
 </head>
 <body>
     <header id="header">
-	<div id="logo"><a href="home.html">翠樅杯</a></div>
+	<div id="logo"><a href="index.html">翠樅杯</a></div>
 	<div id="menu_btn">
 		<div class="menu-trigger">
 			<span></span>
@@ -560,7 +560,7 @@ const firebaseConfig = {
 	</div>
 	<nav id="nav">
 		<ul class="nav">
-          <li><a href="home.html">• ホーム</a></li>
+          <li><a href="index.html">• ホーム</a></li>
 			<li class="menu-item-has-children current-menu-item">
 				<a href="#">• コミュニティ</a>
 				<ul class="sub-menu">
