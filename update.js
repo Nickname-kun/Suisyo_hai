@@ -437,7 +437,7 @@ section {
 </head>
 <body>
     <header id="header">
-	<div id="logo"><a href="home.html">翠樅杯</a></div>
+	<div id="logo"><a href="index.html">翠樅杯</a></div>
 	<div id="menu_btn">
 		<div class="menu-trigger">
 			<span></span>
@@ -447,7 +447,7 @@ section {
 	</div>
 	<nav id="nav">
 		<ul class="nav">
-          <li><a href="home.html">• ホーム</a></li>
+          <li><a href="index.html">• ホーム</a></li>
 			<li class="menu-item-has-children current-menu-item">
 				<a href="#">• コミュニティ</a>
 				<ul class="sub-menu">
